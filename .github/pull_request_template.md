@@ -2,12 +2,16 @@
 
 - 주차:
 - GitHub ID:
+- 브랜치: `week{N}/{github-id}`
+- 제출 폴더: `submissions/{github-id}/`
+
+> 리뷰 후 머지됩니다. `practice/`는 건드리지 않았는지 확인해주세요.
 
 ### DoD 체크리스트
-- [ ] `terraform apply` 성공 (state list 또는 스크린샷 첨부)
+- [ ] `terraform init` 성공, `.terraform.lock.hcl` 커밋됨
+- [ ] `terraform apply` 성공 (`state list` 출력 아래에 첨부)
 - [ ] **`terraform destroy` 완료 & 콘솔에서 리소스 0개 확인**
-- [ ] `git diff`로 자격증명 / `*.tfvars` / `*.tfstate` 커밋 안 됐는지 확인
-- [ ] 워크북 실습 로그 작성
+- [ ] `git status`로 자격증명 / `*.tfvars` / `*.tfstate` 커밋 안 됐는지 확인
 
 ### 오늘 만든 것 (요약)
 
@@ -15,8 +19,12 @@
 ### 막힌 지점 / 질문
 
 
-### destroy 확인
-- `terraform state list` 출력:
+### destroy 전 `terraform state list`
 ```
-(빈 출력이어야 함)
+(여기에 붙여넣기 — destroy하면 사라지니 미리 복사해둔 것)
+```
+
+### destroy 후 `terraform state list`
+```
+(완전히 빈 출력이어야 함 — 데이터 소스까지 사라집니다)
 ```
