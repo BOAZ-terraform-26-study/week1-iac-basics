@@ -26,3 +26,6 @@ terraform.rc
 .DS_Store
 .idea/
 .vscode/
+
+lecture/build-pdf.sh
+lecture/style.css
