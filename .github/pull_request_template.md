@@ -21,10 +21,10 @@
 
 ### destroy 전 `terraform state list`
 ```
-(여기에 붙여넣기 — destroy하면 사라지니 미리 복사해둔 것)
+(여기에 붙여넣기: destroy하면 확인할 수 없으므로 미리 복사해둔 출력)
 ```
 
 ### destroy 후 `terraform state list`
 ```
-(완전히 빈 출력이어야 함 — 데이터 소스까지 사라집니다)
+(완전히 빈 출력이어야 함: 데이터 소스까지 함께 삭제됩니다)
 ```
