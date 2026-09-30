@@ -1,4 +1,4 @@
-# Week1 실습 — 첫 S3 버킷 apply/destroy
+# Week1 실습: 첫 S3 버킷 apply/destroy
 
 > 자세한 진행은 **[실습 워크북 PDF](../lecture/실습워크북.pdf)** 를 위에서 아래로 따라가세요. 이 파일은 요약입니다.
 
@@ -14,7 +14,7 @@ terraform plan                       # "Plan: 1 to add" 확인
 terraform apply                      # yes
 terraform state list                 # 리소스 + 데이터 소스 확인
 terraform show                       # state 전체 보기
-terraform destroy                    # yes  (실습 끝나면 반드시!)
+terraform destroy                    # yes  (실습이 끝나면 반드시 실행)
 ```
 
 ## 난이도 가이드
@@ -22,7 +22,7 @@ terraform destroy                    # yes  (실습 끝나면 반드시!)
 - **L2**: 태그 공통화, 변수 추가
 - **L3-⭐**: versioning, lifecycle 규칙
 
-## 막히면 여기 (힌트 단계)
+## 막힐 때 참고할 자료 (힌트 단계)
 1. `aws_s3_bucket` 문서: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
 2. `aws_caller_identity` 데이터 소스: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity
 3. `InvalidBucketName`이 나면 버킷명이 63자를 넘었는지 확인 (`project_name`은 40자 이내)
